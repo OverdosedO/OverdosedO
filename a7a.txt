@@ -1,3 +1,0 @@
-a = "AC56d711a740c98dfab2b76a5c1be95aca";
-t = "fba218246310616308ad7e069eb51356";
-pn = "whatsapp:+14177080982":
