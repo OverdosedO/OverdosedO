@@ -1,15 +1,12 @@
 workflows:
   ios-workflow:
     name: Build and Test iOS App
-    max_build_duration: 120
-    platform:
-      ios:
-        flutter: true
-        cocoapods: true
-    build:
-      ios:
-        flutter: true
-        cocoapods: true
-    test:
-      test_name: Run iOS Tests
-      test_app: true
+    max_build_duration: 120  # تحديد الحد الأقصى لمدة البناء
+    ios:
+      flutter: true  # تحديد أن المشروع يستخدم Flutter
+      build:
+        ios:
+          cocoapods: true  # تمكين Cocoapods (مكتبات iOS الخارجية)
+      test:
+        test_name: Run iOS Tests  # اسم الاختبار
+        test_app: true  # تمكين اختبار التطبيق
