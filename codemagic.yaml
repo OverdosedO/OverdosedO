@@ -1,3 +1,15 @@
-git add codemagic.yaml
-git commit -m 'Add first workflow'
-git push
+workflows:
+  ios-workflow:
+    name: Build and Test iOS App
+    max_build_duration: 120
+    platform:
+      ios:
+        flutter: true
+        cocoapods: true
+    build:
+      ios:
+        flutter: true
+        cocoapods: true
+    test:
+      test_name: Run iOS Tests
+      test_app: true
